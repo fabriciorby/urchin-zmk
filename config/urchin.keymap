@@ -96,18 +96,18 @@
 		layer1 {
 			label = "Nav.";
 			bindings = <
-			&none &none &none &none &none			&kp K_UNDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_REDO 
+			&none &none &none &none &none			&kp K_UNDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_REDO
 	&kp LCTRL &kp LALT &kp LCMD &kp LSHFT &kp CAPS			&kp LEFT &kp DOWN &kp UP &kp RIGHT &kp CAPS
-			&none &none &none &none &none			&kp INSERT &kp PAGE_DOWN &kp PAGE_UP &kp HOME &kp END 
+			&none &none &none &none &none			&kp INSERT &kp PAGE_DOWN &kp PAGE_UP &kp HOME &kp END
 					  &none &none			&kp ENTER &kp BACKSPACE
 			>;
 		};
 		layer2 {
 			label = "Mouse";
 			bindings = <
-			&none &none &none &none &none			&kp K_UNDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_REDO 
-	&kp LCTRL &kp LALT &kp LCMD &kp LSHFT &kp CAPS			&mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none 
-			&none &none &none &none &none			&msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none 
+			&none &none &none &none &none			&kp K_UNDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_REDO
+	&kp LCTRL &kp LALT &kp LCMD &kp LSHFT &kp CAPS			&mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none
+			&none &none &none &none &none			&msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none
 					&none &none			&mkp LCLK &mkp RCLK
 			>;
 		};
@@ -116,15 +116,15 @@
 			bindings = <
 		&kp LBRC &kp AMPS &kp STAR &kp LPAR &kp RBRC		&none &none &none &none &none
 		&kp DQT &kp DOLLAR &kp PERCENT &kp CARET &kp PLUS	&none &kp RSHFT &kp RCMD &kp RALT &kp RCTRL
-		&kp TILDE &kp EXCL &kp AT_SIGN &kp HASH &kp PIPE	&none &none &none &none &none 
+		&kp TILDE &kp EXCL &kp AT_SIGN &kp HASH &kp PIPE	&none &none &none &none &none
 						&kp UNDER &kp RPAR	&none &none
 			>;
 		};
 		layer4 {
 			label = "Num.";
 			bindings = <
-			&kp LBKT &kp N7 &kp N8 &kp N9 &kp RBKT		&none &none &none &none &none 
-			&kp QUOTE &kp N4 &kp N5 &kp N6 &kp EQUAL	&none &kp RSHFT &kp RCMD &kp RALT &kp RCTRL 
+			&kp LBKT &kp N7 &kp N8 &kp N9 &kp RBKT		&none &none &none &none &none
+			&kp QUOTE &kp N4 &kp N5 &kp N6 &kp EQUAL	&none &kp RSHFT &kp RCMD &kp RALT &kp RCTRL
 			&kp GRAVE &kp N1 &kp N2 &kp N3 &kp BSLH		&none &none &none &none &none
 						&kp MINUS &kp N0	&none &none
 			>;

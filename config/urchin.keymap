@@ -28,6 +28,7 @@
 
 &lt {
 	tapping-term-ms = <200>; // This is the value already set by default
+	quick_tap_ms = <200>; // Enable quick tap for &lt
 };
 
 / {

@@ -69,14 +69,14 @@
 		// both right thumb keys
 		combo_esc {
 			timeout-ms = <50>;
-			key-positions = <17 18>;
+			key-positions = <16 17>;
 			bindings = <&kp ESC>;
 			layers = <BASE>;
 		};
 		// internal-left & external-right thumb keys
 		combo_tab {
 			timeout-ms = <50>;
-			key-positions = <13 14>;
+			key-positions = <12 13>;
 			bindings = <&kp TAB>;
 			layers = <BASE>;
 		};
@@ -90,7 +90,7 @@
 			&kp Q &kp W &kp E &kp R &kp T			&kp Y &kp U &kp I &kp O &kp P
 	&hml LCTRL A &hml LALT S &hml LCMD D &hml LSHFT F &kp G		&kp H &hmr RSFT J &hmr RCMD K &hmr RALT L &hmr RCTRL SEMI
 			&lt HEL Z &kp X &kp C &kp V &kp B		&kp N &kp M &kp COMMA &kp DOT &lt HEL SLASH
-			&lt MOUSE ESCAPE &lt NAV SPACE			&lt SYM ENTER &lt NUM BACKSPACE
+			&lt NAV SPACE &lt MOUSE TAB			&lt SYM ENTER &lt NUM BACKSPACE
 			>;
 		};
 		layer1 {
@@ -117,7 +117,7 @@
 		&kp LBRC &kp AMPS &kp STAR &kp LPAR &kp RBRC		&none &none &none &none &none
 		&kp DQT &kp DOLLAR &kp PERCENT &kp CARET &kp PLUS	&none &kp RSHFT &kp RCMD &kp RALT &kp RCTRL
 		&kp TILDE &kp EXCL &kp AT_SIGN &kp HASH &kp PIPE	&none &none &none &none &none
-						&kp UNDER &kp RPAR	&none &none
+						&kp RPAR &kp UNDER	&none &none
 			>;
 		};
 		layer4 {
@@ -126,7 +126,7 @@
 			&kp LBKT &kp N7 &kp N8 &kp N9 &kp RBKT		&none &none &none &none &none
 			&kp SQT &kp N4 &kp N5 &kp N6 &kp EQUAL		&none &kp RSHFT &kp RCMD &kp RALT &kp RCTRL
 			&kp GRAVE &kp N1 &kp N2 &kp N3 &kp BSLH		&none &none &none &none &none
-						&kp MINUS &kp N0	&none &none
+						&kp N0 &kp MINUS	&none &none
 			>;
 		};
 		layer5 {

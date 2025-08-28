@@ -19,11 +19,16 @@
 #define SYM 3
 #define NUM 4
 #define HEL 5
+#define BLT 6
 // -----------------
 
 &lt {
 	tapping-term-ms = <200>; // This is the value already set by default
 	quick_tap_ms = <200>; // Enable quick tap for &lt
+};
+
+&sl {
+	release-after-ms = <2000>;
 };
 
 / {
@@ -62,19 +67,23 @@
 
 	combos {
 		compatible = "zmk,combos";
-		// both right thumb keys
 		combo_esc {
 			timeout-ms = <50>;
 			key-positions = <16 17>;
 			bindings = <&kp ESC>;
 			layers = <BASE>;
 		};
-		// internal-left & external-right thumb keys
 		combo_tab {
 			timeout-ms = <50>;
 			key-positions = <12 13>;
 			bindings = <&kp TAB>;
 			layers = <BASE>;
+		};
+		combo_bluetooh_layer {
+			timeout-ms = <200>;
+			key-positions = <31 24>;
+			bindings = <&sl BLT>;
+			layers = <BASE MOUSE>;
 		};
 	};
 
@@ -132,6 +141,15 @@
 			&none &none &kp LPAR &kp RPAR &none		&none &kp N4 &kp N5 &kp N6 &none
 			&none &none &kp LBKT &kp RBKT &none		&none &kp N1 &kp N2 &kp N3 &none
 						&none &none		&kp N0 &kp N0
+			>;
+		};
+		layer6 {
+			label = "Bluetooth";
+			bindings = <
+			&none &none &none &none &none			&bt BT_CLR_ALL &bt BT_CLR    &none	   &none         &none
+			&none &none &none &none &none			&bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+			&none &none &none &none &none			&bt BT_DISC 0  &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4
+						&none &none		&bt BT_PRV &bt BT_NXT
 			>;
 		};
 	};
